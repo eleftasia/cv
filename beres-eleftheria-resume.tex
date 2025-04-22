@@ -1,167 +1,199 @@
-\documentclass{resume}
+\documentclass{article}
+\usepackage{multirow}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{changepage}
+\usepackage[hidelinks, breaklinks=true]{hyperref}
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\bibliographystyle{plain}
+
+\pagenumbering{gobble}
 
 \begin{document}
 
-%---------- HEADING ----------
+\nobibliography{pubs}
 
 \begin{center}
-    \textbf{\Huge \bfseries Eleftheria Beres} \\ \vspace{3pt}
-    \small
-    \faEnvelopeO \hspace{.5pt} \href{mailto:eberes@cs.washington.edu}{eberes@cs.washington.edu}
-    $|$
-    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/elliberes}{@elliberes}
-    $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/ellifteria}{@ellifteria}
-    $|$
-    \faGlobe \hspace{.5pt} \href{https://elliberes.me}{elliberes.me}
+    \textbf{\huge{Eleftheria Anastasia Beres}}
+
+    \vspace{10pt}
+
+    \begin{tabular}{c c c}
+        552 N 68th St, Seattle, WA 98103 & 817-653-5991 & \href{mailto:eberes@cs.washington.edu}{eberes@cs.washington.edu}
+    \end{tabular}
+
+    \vspace{5pt}
+
+    \href{https://elliberes.me}{https://elliberes.me}
+    
 \end{center}
 
-\section{Research Interests}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        
-        Software engineering research for scientific programming; reproducibility, replicability, and reuse in computational science; computing education for disciplinary scientists \\ \vspace{3pt}
-        
-    }}
-  \resumeSubHeadingListEnd
+\section*{Education}
+\hrule
+\vspace{10pt}
 
-%----------- EDUCATION -----------
+\begin{itemize}[leftmargin=1.5in]
+    \item[2024–] \textbf{University of Washington}, Seattle, WA\\
+    Ph.D. in Computer Science and Engineering
+    \item[2021–2024] \textbf{Northwestern University}, Evanston, IL\\
+    B.S. in Computer Science\\
+    Summa Cum Laude; GPA: 3.99/4.00; Major GPA 4.00/4.00
+\end{itemize}
 
-\section{Education}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
-   \resumeEducationHeading
-      {University of Washington}{Seattle, Washington}
-      {PhD in Computer Science \& Engineering}{Sep 2024 – Present}
+\section*{Research Interests}
+\hrule
+\vspace{10pt}
 
-    \resumeEducationHeading
-      {Northwestern University}{Evanston, Illinois}
-      {BS in Computer Science; Summa Cum Laude; GPA: 3.99/4.00}{Sep 2021 – Jun 2024}
-    
-  \resumeSubHeadingListEnd
+Executable and algorithmic approaches to modeling biological systems; reproducibility, replicability, and reuse in computational, systems, and synthetic biology; computing education for disciplinary scientists
 
+\section*{Research Experience}
+\hrule
+\vspace{10pt}
 
-%----------- Research EXPERIENCE -----------
+\begin{itemize}[leftmargin=1.5in]
+    \item[Sep 2024–Present] \textbf{Programming Languages and Software Engineering (PLSE)\\ Group and Learning, Computing, Imagination (LCI) Lab}\\
+    Paul G. Allen School of Computer Science \& Engineering, Seattle, WA\\
+    \textit{Research Assistant}\\
+    \textit{Advisors: Michael D. Ernst, Amy J. Ko, R. Benjamin Shapiro}
+    \begin{itemize}
+        \item Working on improving the reproducibility of Jupyter Notebooks for scientific work in the JupyterLab interactive development environment.
+        \item Studying software engineering practices among disciplinary scientists specifically in the context of reproducibility, replicability, reuse, and correctness in computational science.
+    \end{itemize}
+    \item[Dec 2021–Jun 2024] \textbf{Leonard Lab}\\
+    Northwestern University Center for Synthetic Biology, Evanston, Il\\
+    \textit{Undergraduate Researcher}\\
+    \textit{Advisors: Joshua Leonard}
+    \begin{itemize}
+        \item Designed and implemented Python package for easy-to-use, rapid, batch flow cytometry data analysis for synthetic biologists.
+        \item Experimentally characterized mammalian genetic circuit components for computer-aided design of mammalian genetic circuits.
+        \item Characterized and analyzed synthetic transcription factors in mammalian cells.
+    \end{itemize}
+    \item[Sep 2023–Jun2024] \textbf{Xenobot Group}\\
+     Northwestern University Center for Robotics and Biosystems, Evanston, IL\\
+    \textit{Undergraduate Researcher}\\
+    \textit{Advisor: Sam Kriegman}
+    \begin{itemize}
+        \item Studied the impacts of simulated growth on rigid-body virtual creatures.
+        \item Used genetic algorithms to evolutionarily optimize rigid-body robotics in a physics simulator.
+    \end{itemize}
+\end{itemize}
 
-\section{Research Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+\section*{Poster Presentations}
+\hrule
+\vspace{10pt}
 
-    \resumeResearchSubheading
-      {PLSE Group \& LCI Lab}{Paul G. Allen School of Computer Science \& Engineering}
-      {Research Assistant}{Seattle, Washington}{Advisors: Mike Ernst, Amy Ko, Ben Shapiro}{Sep 2024 – Present}
-        \resumeItemListStart
-            \resumeItem{Studying software engineering practices among disciplinary scientists specifically in the context of reproducibility, replicability, reuse, and correctness in computational science.}
-        \resumeItemListEnd
-      
-      \resumeResearchSubheading
-      {Xenobot Lab}{Northwestern University Center for Robotics and Biosystems}
-      {Undergraduate Researcher}{Evanston, Illinois}{Advisor: Sam Kriegman}{Sep 2023 – Jun 2024}
-        \resumeItemListStart
-            \resumeItem{Designed platform for simulating rigid-body virtual robots with the ability to grow as they behave in and interact with their environment.}
-        \resumeItemListEnd
+\begin{itemize}[leftmargin=1.5in]
+    % \item[2023] \textbf{Beres E}, et al. PyFlowBAT: An Open-Source Software Package for Performing High-Throughput Batch Analysis of Flow Cytometry Data. Poster presented at: EBRC Annual Meeting; 2023 Jun 5-6; Evanston, IL.
+    \item[2023] \bibentry{pyflowbatebrc}
+\end{itemize}
 
-      \resumeResearchSubheading
-      {Leonard Lab}{Northwestern University Center for Synthetic Biology}
-      {Undergraduate Researcher}{Evanston, Illinois}{Advisor: Joshua Leonard}{Dec 2021 – Jun 2024}
-        \resumeItemListStart
-            \resumeItem{Conceptualized and developed Python package for easy-to-use, rapid, batch flow cytometry data analysis for synthetic biologists.}
-        \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
+\section*{Teaching Experience}
+\hrule
+\vspace{10pt}
 
-%----------- Teaching Experience -----------
+\begin{itemize}[leftmargin=1.5in]
+    \item[Summer 2024] Peer Mentor\footnote{Northwestern did not officially have undergraduate TA positions in the McCormick School of Engineering; instead, the positions were called ``Peer Mentors.''}: \textbf{COMP\_SCI 349 Machine Learning}\\
+    Department of Computer Science\\
+    Northwestern University, Evanston, IL
+    \item[Spring 2024] Peer Mentor: \textbf{COMP\_SCI 349 Machine Learning}\\
+    Department of Computer Science\\
+    Northwestern University, Evanston, IL
+    \item[Winter 2024] Peer Mentor: \textbf{COMP\_SCI 396/496 Artificial Life}\\
+    Department of Computer Science\\
+    Northwestern University, Evanston, IL
+    \item[Fall 2023] Peer Mentor: \textbf{GEN\_ENG 205-1 Engineering Analysis 1}\\
+    Department of Electrical and Computer Engineering\\
+    Northwestern University, Evanston, IL
+    \item[Fall 2023] Peer Mentor: \textbf{BMD\_ENG 220 Introduction to Biostatistics}\\
+    Department of Biomedical Engineering\\
+    Northwestern University, Evanston, IL
+    \item[Winter 2023] Peer Mentor: \textbf{DATA\_ENG 200 Foundations of Data Engineering}\\
+    Department of Computer Science\\
+    Northwestern University, Evanston, IL
+    \item[Fall 2022] Peer Mentor: \textbf{BMD\_ENG 220 Introduction to Biostatistics}\\
+    Department of Biomedical Engineering\\
+    Northwestern University, Evanston, IL
+\end{itemize}
 
-  \section{Teaching Experience}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+\section*{Awards \& Honors}
+\hrule
+\vspace{10pt}
 
-    \resumeSubheading
-      {\textbf{Peer Mentor:} COMP\_SCI 349 Machine Learning}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Summer 2024}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} COMP\_SCI 349 Machine Learning}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Spring 2024}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} COMP\_SCI 397 Artificial Life}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Winter 2024}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} GEN\_ENG 205-1 Engineering Analysis 1}{Evanston, Illinois}
-      {Northwestern University Department of Electrical and Computer Engineering}{Fall 2023}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} BMD\_ENG 220 Introduction to Biostatistics}{Evanston, Illinois}
-      {Northwestern University Department of Biomedical Engineering}{Fall 2023}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} DATA\_ENG 200 Foundations of Data Engineering}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Winter 2023}
-    
-    \resumeSubheading
-      {\textbf{Peer Mentor:} BMD\_ENG 220 Introduction to Biostatistics}{Evanston, Illinois}
-      {Northwestern University Department of Biomedical Engineering}{Fall 2022}
-    
-  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=1.5in]
+    \item[2024–2027] \textbf{ARCS Scholar}\\
+    ARCS Seattle Chapter, Seattle, WA
+    \item[2024–2025] \textbf{Jeff Dean - Heidi Hopper Endowed Regental Fellowship}\\
+    Paul G. Allen School of Computer Science \& Engineering, Seattle, WA
+    \item[Jun 2024] \textbf{Outstanding Computer Science Senior}\\
+    Northwestern University Department of Computer Science, Evanston, IL
+    \item[Summer 2023] \textbf{Summer Undergraduate Research Fellowship}\\
+    Northwestern University Department of Computer Science, Evanston, IL
+    \item[Summer 2023] \textbf{Summer Undergraduate Research Grant}\\
+    Northwestern University Office of Undergraduate Research, Evanston, IL
+    \item[Summer 2022] \textbf{Summer Undergraduate Research Grant}\\
+    Northwestern University Office of Undergraduate Research, Evanston, IL
+\end{itemize}
 
+\section*{Service \& Organizations}
+\hrule
+\vspace{10pt}
 
-%----------- AWARDS & ACHIEVEMENTS -----------
+\begin{itemize}[leftmargin=1.5in]
+    \item[Jan 2025–Present] \textbf{oSTEM at UW}: Secretary\\
+    University of Washington, Seattle, WA
+    \item[Jan 2025–Mar 2025] \textbf{Prospective Students Visit Days Scheduler}\\
+    Paul G. Allen School of Computer Science \& Engineering, Seattle, WA
+    \item[Dec 2024–Jan 2025] \textbf{Ph.D. Program Application Reader}\\
+    Paul G. Allen School of Computer Science \& Engineering, Seattle, WA
+    \item[Sep 2024–Dec 2024] \textbf{Pre-Application Mentor Service (PAMS)}: PAMS Mentor\\
+    Paul G. Allen School of Computer Science \& Engineering, Seattle, WA
+    \item[Sep 2022–Sep 2023] \textbf{NU Biomedical Engineering Society}: Secretary\\
+    Northwestern University Department of Biomedical Engineering, Evanston, IL
+    \item[Sep 2021–Sep 2022] \textbf{NU Biomedical Engineering Society}: Public Relations Chair\\
+    Northwestern University Department of Biomedical Engineering, Evanston, IL
+\end{itemize}
 
-\section{Awards \& Honors}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+\section*{Relevant Coursework}
+\hrule
+\vspace{10pt}
 
-    \resumeSubheading
-      {ARCS Scholar}{Seattle, Washington}
-      {ARCS Seattle Chapter}{2024 – 2027}
-    
-    \resumeSubheading
-      {Jeff Dean - Heidi Hopper Endowed Regental Fellowship }{Seattle, Washington}
-      {Paul G. Allen School of Computer Science \& Engineering}{2024 – 2025}
-    
-    \resumeSubheading
-      {Outstanding Computer Science Senior}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Jun 2024}
-    
-    \resumeSubheading
-      {Summer Undergraduate Research Fellowship}{Evanston, Illinois}
-      {Northwestern University Department of Computer Science}{Summer 2023}
+\subsection*{University of Washington}
 
-    \resumeSubheading
-      {Summer Undergraduate Research Grant}{Evanston, Illinois}
-      {Northwestern University Office of Undergraduate Researcher}{Summer 2023}
-    
-    \resumeSubheading
-      {Summer Undergraduate Research Grant}{Evanston, Illinois}
-      {Northwestern University Office of Undergraduate Researcher}{Summer 2022}
-    
-  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=1.5in]
+    \item[Spring 2025] \textbf{GENOME 569 Bioinformatics Workflows for High-Throughput Sequencing Experiments}\\
+    Grade: \textit{In progress} | Skills: Learning and implementing high-throughput bioinformatics workflows for single cell RNA sequencing experiments.
+    \item[Spring 2025] \textbf{CSE 587 Advanced Systems and Synthetic Biology}\\
+    Grade: \textit{In progress} | Skills: Learning about recent developments in synthetic biology.
+    \item[Winter 2025] \textbf{CSE 503 Software Engineering}\\
+    Grade: 4.00 | Skills: Learned program analysis methods and software engineering research topics.
+\end{itemize}
 
-%----------- Service -----------
+\subsection*{Northwestern University}
 
-\section{Service}
-  \vspace{3pt}
-  \resumeSubHeadingListStart
+\begin{itemize}[leftmargin=1.5in]
+    \item[Spring 2024] \textbf{COMP\_SCI 324 Dynamics of Programming Languages}\\
+    Grade: 4.00 | Skills: Performed mathematical modeling of programming languages; created redex model of the semantics of the future annotation in MultiLisp based on ``The Semantics of Future'' by Cormac Flanagan and Matthias Felleisen.
+    \item[Winter 2024] \textbf{COMP\_SCI 397 Computer Science Education}\\
+    Grade: 4.00 | Skills: Learned constructionist approaches to CS education; created tool to demonstrate the similarities between spreadsheets and traditional programming.
+    \item[Fall 2023] \textbf{COMP\_474 Probabilistic Graphical Models}\\
+    Grade: 4.00 | Skills: Covered statistical estimation and graphical models including Naive Bayes models, Markov Networks, Factor Graphs, Gaussian Mixture Models, Expectation Maximization, Latent Dirichlet Allocation.
+    \item[Winter 2023] \textbf{ES\_APPM 346 Modeling and Computation in Science and Engineering}\\
+    Grade: 4.00 | Skills: Learned and implemented numerical methods for solving differential equations including stochastic differential equations.
+    \item[Fall 2022] \textbf{BMD\_ENG 311 Computational Genomics}\\
+    Grade: 4.00 | Skills: Learned bioinformatics methods for analyzing single cell RNA sequencing data; analyzed previously-published genomics data from the NCBI GEO database from Zika and Dengue infections to identify differentially expressed genes.
+\end{itemize}
 
-    \resumeSubheading
-      {Pre-Application Mentor Service (PAMS): \textnormal{PAMS Mentor}}{Seattle, Washington}
-      {Paul G. Allen School of Computer Science \& Engineering}{Sep 2024 – Present}
-    
-    \resumeSubheading
-      {PLSE Group: \textnormal{PLSE Visit Days Support Co-Chair}}{Seattle, Washington}
-      {Paul G. Allen School of Computer Science \& Engineering}{Sep 2024 – Present}
+\section*{Skills}
+\hrule
+\vspace{10pt}
 
-    \resumeSubheading
-      {NU Biomedical Engineering Society: \textnormal{Secretary}}{Evanston, Illinois}
-      {Northwestern University}{2022 – 2023}
-
-      \resumeSubheading
-      {NU Biomedical Engineering Society: \textnormal{Public Relations Chair}}{Evanston, Illinois}
-      {Northwestern University}{2021 – 2022}
-    
-  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=1.5in]
+    \item[Computing] Unix; Python; C; JavaScript; Java; Go; Julia
+    \item[Machine learning] Implementing neural networks from scratch; probabilistic graphical models
+    \item[Bioinformatics] Performing scRNA-seq analysis; automating bioinformatics pipelines with Bash, Python, and R; flow cytometry analysis
+    \item[Biological wetlab] Mammalian cell culture; plasmid design and prep; HEK cell transfection; flow cytometry
+\end{itemize}
 
 \end{document}
